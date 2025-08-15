@@ -46,7 +46,7 @@ jobs:
       - name: Train The Model
         run: |
           python src/models/train_model.py \
-            --config configs/model.model_config.yaml \
+            --config configs/model_config.yaml \
             --data data/processed/features_house_data.csv \
             --models-dir models \
             --mlflow-tracking-uri http://localhost:5555 \
